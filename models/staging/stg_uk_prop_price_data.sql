@@ -1,5 +1,5 @@
-
-
 {{ config(materialized='view') }}
 
-select * from FROM `uk-property-price.uk_prop_price.pp_1995`
+select * FROM {{ source('staging','pp_1995') }}
+limit 100 
+

@@ -1,4 +1,4 @@
-versions: 2
+version: 2
 
 sources: 
   - name: staging
@@ -8,3 +8,4 @@ sources:
     tables:
       - name: pp_1995
       - name: pp_1996
+
