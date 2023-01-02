@@ -1,0 +1,26 @@
+with cte as (
+SELECT
+id,
+price,
+date(date_of_transfer) as date_of_transfer,
+postcode,
+property_type,
+old_new,
+duration, 
+PAON, 
+SAON,
+street,
+locality,
+town_city
+district,
+county, 
+PPD_category,
+record_status
+FROM `uk-property-price.uk_prop_price.pp_1995`
+)
+
+select * from cte
+where date_of_transfer> '1995-05-01' and date_of_transfer < '1995-06-01'
+order by date_of_transfer desc
+
+
