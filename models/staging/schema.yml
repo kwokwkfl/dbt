@@ -1,0 +1,10 @@
+versions: 2
+
+sources: 
+  - name: staging
+    database: uk-property-price
+    schema: uk_prop_price
+
+    tables:
+      - name: pp_1995
+      - name: pp_1996
